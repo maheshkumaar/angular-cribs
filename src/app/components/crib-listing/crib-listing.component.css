@@ -1,0 +1,15 @@
+.card{
+    border:2px solid #DFDFDF;
+    padding-left:5px;
+    padding-right: 5px;
+    padding-top:5px;
+}
+.cards{
+    margin-bottom:8px;
+    margin-top: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.cardModify{
+    margin-top:10px;
+}

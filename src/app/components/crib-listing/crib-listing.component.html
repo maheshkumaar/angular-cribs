@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="card col-sm-12 cardModify">
+    <div class="card-header">Sort Items in list</div>
+    <div class="card-body">
+      <div class="col-sm-4">
+        <label htmlFor="sort-field">Sort By</label>
+        <select class="form-control" name="sort-field" id="sort-field" [(ngModel)]="sortField" required>
+          <option *ngFor="let field of SortFields" value="field">{{field}}</option>    
+        </select> 
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 cards"  *ngFor="let crib of cribs | sortBy: [sortField]"> 
+    <app-crib-card [crib]="crib"></app-crib-card>
+  </div>
+</div>
